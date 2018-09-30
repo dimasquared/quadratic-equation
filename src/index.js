@@ -6,6 +6,6 @@ module.exports = function solveEquation(equation) {
   let c = parseInt(k[3]);
   let x1 = (-b+Math.sqrt(b*b-4*a*c))/(2*a);
   let x2 = (-b-Math.sqrt(b*b-4*a*c))/(2*a);
-  let solutions = [x1, x2];
+  let solutions = [Math.round(x1), Math.round(x2)];
   return solutions.sort((x1, x2) => x1 - x2);
 }
